@@ -11,12 +11,12 @@ namespace FlappyBird
         private bool isDead = false; // Has the player died?
 
         //[SerializeField]
-        private Rigidbody2D rBody; // Even though he set it as private, he's just making a rigid body slot in which to assign the player game object to (although this is done automatically thanks to the code he put in Start below).
+        private Rigidbody2D rBody; // Making a slot under this script component to assign what the rigidbody is (which in this case will be the one attached to the player). So it's so your script and the actual rigidbody component can communicate, which is the whole point of referencing
 
         // Use this for initialization
         void Start()
         {
-            rBody = GetComponent<Rigidbody2D>(); // This is making it so the rigid body slot he just made above gets the  
+            rBody = GetComponent<Rigidbody2D>(); // Just grabbing it automatically from same object 
         }
 
         // Update is called once per frame
