@@ -9,12 +9,14 @@ namespace FlappyBird
         public float upForce = 6f; // Upward force of the Flap
 
         private bool isDead = false; // Has the player died?
-        private Rigidbody2D rBody;
+
+        //[SerializeField]
+        private Rigidbody2D rBody; // Even though he set it as private, he's just making a rigid body slot in which to assign the player game object to (although this is done automatically thanks to the code he put in Start below).
 
         // Use this for initialization
         void Start()
         {
-            rBody = GetComponent<Rigidbody2D>();
+            rBody = GetComponent<Rigidbody2D>(); // This is making it so the rigid body slot he just made above gets the  
         }
 
         // Update is called once per frame

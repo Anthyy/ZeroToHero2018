@@ -381,7 +381,7 @@ GameObject:
   m_Layer: 0
   m_Name: ColumnStandby
   m_TagString: Untagged
-  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -540,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d9b5e1778e9d1246b1683447231fe55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upForce: 6
+  upForce: 5.5
 --- !u!1 &815050478
 GameObject:
   m_ObjectHideFlags: 0
